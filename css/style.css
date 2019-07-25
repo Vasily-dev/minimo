@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Playfair+Display|Ubuntu:300&display=swap');
+
+body {
+    min-width: 320px;
+    font-family: 'Playfair Display', sans-serif;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    font-weight: 400;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+
+}
+
+ul,
+li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+a,
+a:active,
+a:focus {
+    color: #b4ad9e;
+    outline: none;
+    border: none;
+}
+
+a:hover {
+    color: #898377;
+}
+
+
+/* меню и хедер */
+
+header .navbar-light {
+    background-color: #fff;
+}
+
+header .navbar-brand{
+    text-transform: uppercase;
+    font-family: 'Inconsolata', monospace;
+    font-size: 30px;
+    color: black;
+    letter-spacing: 8px;
+}
+
+header .nav-item {
+    text-transform: uppercase;
+    margin-left: 50px;
+}
+
+header .nav-item a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    background-color: #ccc;
+    height: 1px;
+    transform: scale(0);
+    transition: all .3s;
+}
+
+header .nav-item a:hover::after {
+    transform: scale(1);
+}
+
+.slider img {
+    padding: 0 20px 0 15px;
+}
+
+.slider img:focus{
+    outline: none;
+}
+
+.single-post {
+    margin-top: 100px;
+}
+
+.post-category {
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    color: #beb8ab;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.post-title {
+    color: #626262;
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 35px;
+    text-align: left;
+}
+
+.post-text {
+    font-size: 14px;
+    color: #949494;
+    margin-bottom: 55px;
+}
+
+.link-more {
+    text-transform: uppercase;
+}
+
+.grid-posts {
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
+
+.grid-posts .card {
+    border: none;
+    margin-bottom: 130px;
+}
+
+.grid-posts .card-body {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.load-more {
+    padding: 1rem 2rem;
+    border-color: #626262;
+    border-radius: 0;
+}
+
+.load-more span{
+    display: none;
+}
+
+.sign-up {
+    background-color: #f0f0f0;
+    padding: 70px 0;
+}
+
+.sign-up h3 {
+    color: #333333;
+}
+
+.sign-up form {
+    margin-top: 70px;
+}
+
+.sign-up .form-input {
+    position: relative;
+}
+
+.sign-up .form-control {
+    border: none;
+    border-bottom: 1px solid #000;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.sign-up .form-control:focus {
+    box-shadow: none;
+} 
+
+.form-input .btn {
+    position: absolute;
+    right: 0;
+    top: -5px;
+    font-size: 25px;
+}
+
+footer {
+    background-color: #f0f0f0;
+    padding: 40px 0;
+    color: #000;
+}
+
+.footer-left a {
+    color: #000;
+    margin-right: 20px;
+}
+
+.footer-right a {
+    color: #626262;
+    margin-left: 20px;
+}
+
+/* медиа */
+
+@media only screen and (max-width : 767px){
+    .greed-posts {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    } 
+    .greed-posts .card {
+      margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width : 991px){
+    header .nav-item {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width : 575px) {
+    footer .footer-left {
+        margin-bottom: 10px;
+    }
+}
+
+
+
+/* font-family: 'Ubuntu', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Inconsolata', monospace; */
+
+
+
+
+
